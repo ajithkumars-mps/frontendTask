@@ -1,0 +1,147 @@
+.loginContainer{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../Assets/Images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loginPopup{
+        background: rgb(255, 255, 255);
+        height: 80vh;
+        width: 300px;
+        border-radius: 10px;
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .loginRectangle{
+            position: absolute;
+            top: -25px;
+            height: 25vh;
+            width: 270px;
+            background: rgb(71, 128, 235);
+            border-radius: 7px;
+            box-shadow: 0px 1px 15px rgb(36, 101, 222);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            h3{
+                color: white;
+                font-weight: 700;
+            }
+            .iconContainer{
+                display: flex;
+                justify-content: space-between;
+                color: white;
+            }
+            .alignCenter{
+                text-align: center;
+            }
+        }
+        .loginForm{
+            margin-top: 26vh;
+            text-align: center;
+            .inputContainer{
+                position: relative;
+                input{
+                    margin: 10px;
+                    height: 35px;
+                    width: 250px;
+                    border-radius: 5px;
+                    accent-color: rgb(37, 108, 240);
+                }
+                .inputLabel{
+                    position: absolute;
+                    background: white;
+                    left: 15px;
+                    top: 18px;
+                    width: 50px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    pointer-events: none;
+                    transition: 0.3s ease all;
+                }
+                .inputPassword{
+                    position: absolute;
+                    background: white;
+                    left: 15px;
+                    top: 18px;
+                    width: 75px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    pointer-events: none;
+                    transition: 0.3s ease all;
+                }
+                input:focus{
+                    border: 2px solid rgb(71, 128, 235);
+                }
+                input:focus + .inputLabel{
+                    position: absolute;
+                    background: white;
+                    left: 15px;
+                    top: -3px;
+                    transition: 0.3s ease all;
+                }
+                .isFilled{
+                    position: absolute;
+                    background: white;
+                    left: 15px;
+                    top: -3px;
+                    width: 50px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    pointer-events: none;
+                    transition: 0.3s ease all;
+                }
+                .isFilledPassword{
+                    position: absolute;
+                    background: white;
+                    left: 15px;
+                    top: -3px;
+                    width: 75px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    pointer-events: none;
+                    transition: 0.3s ease all;
+                }
+
+                input:focus + .inputPassword{
+                    position: absolute;
+                    background: white;
+                    left: 15px;
+                    top: -3px;
+                    transition: 0.3s ease all;
+                }
+            }
+            button{
+                height: 35px;
+                width: 250px;
+                border-radius: 5px;
+                font-size: 12px;
+                font-weight: 700;
+                background: rgb(37, 108, 240);
+                color: white;
+                border: none;
+                margin-top: 25px;
+                box-shadow: 0px 1px 2px rgb(37, 108, 240);
+            }
+            .actionSpan{
+                margin: 25px 0;
+                .forgotPassword{
+                    margin-bottom: 30px;
+                }
+                p{
+                    margin: 0;
+                    font-size: 14px;
+                    color: rgb(168, 167, 167);
+                    .clickableText{
+                        color: rgb(37, 108, 240);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
